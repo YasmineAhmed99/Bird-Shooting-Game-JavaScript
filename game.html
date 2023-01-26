@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+
+
+
+
+body{
+
+    background-image: url("pic/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg");
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+img{
+
+width: 65px;
+height: 65px;
+position: relative;
+
+margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+ .score{
+
+  color: black;
+  position:  absolute;
+
+  top: 7%;
+  left: 92%;
+  font-size: 30px;
+  border: 2px solid green;
+  padding: 7px;
+  transform:  translate(-50%);
+  width: 135px;
+
+
+ }
+
+ .birdskilled{
+
+  
+color: black;
+position:  absolute;
+
+top: 7%;
+left: 80%;
+font-size: 30px;
+border: 2px solid green;
+padding: 7px;
+transform:  translate(-50%);
+width: 135px;
+
+ }
+
+ .playernamei{
+
+  
+  color: black;
+position:  absolute;
+
+top: 7%;
+left: 10%;
+font-size: 30px;
+border: 2px solid green;
+padding: 7px;
+transform:  translate(-50%);
+width: 135px;
+
+
+ }
+
+ .timer{
+
+  color: black;
+position:  absolute;
+
+top: 7%;
+left: 30%;
+font-size: 30px;
+border: 2px solid green;
+padding: 7px;
+transform:  translate(-50%);
+width: 135px;
+
+
+ }
+
+#showscore{
+
+visibility: hidden;
+height: 150px;
+width: 250px;
+background-color: gray;
+
+font-size: 30px;
+border: 2px solid green;
+padding: 7px;
+
+width: 300px;
+height: 300px;
+position: fixed;
+top: 40%;
+left: 40%;
+
+
+}
+
+
+
+.pics{
+
+display: flex;
+flex-direction: column;
+
+}
+
+.flip
+ { transform:rotateY(180deg)
+ }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+  
+<div class="pics">
+  
+
+  <img class="bluebird" src="pic/bird1.gif"/>
+
+
+<img class="blackbird" src="pic/bird2.gif"/>
+<img class="whitebird" src="pic/bird3.gif"/>
+
+<img class="bluebird" src="pic/bird1.gif"/>
+
+<img class="blackbird" src="pic/bird2.gif"/>
+<img class="whitebird" src="pic/bird3.gif"/>
+
+<img class="blackbird" src="pic/bird2.gif"/>
+<img class="blackbird" src="pic/bird2.gif"/>
+<img class="whitebird" src="pic/bird3.gif"/>
+
+<img class="bluebird" src="pic/bird1.gif"/>
+
+</div>
+
+
+
+
+
+ 
+  <div class="btnGroup">
+    
+    <span class="timer">
+      Time Limit: <span id="counter"></span>
+    </span>
+  </div>
+
+    <div class="score" id="scores">Score: <span id="scorecount"> 0</span>  </div>
+   
+    <div class="birdskilled" id="birdskilled">Birds Killed: <span id="birdscount"> 0</span>  </div>
+  <div class="playernamei"> 
+
+  Welcome: <span class="result"> </span>
+
+  </div>
+ 
+  <div id="showscore">
+
+   <div>
+  Game Over 
+
+  <div> Your Score: <p id="p2"></p> </div>
+
+  <p id="p1"></p>
+   </div>
+
+
+</div>
+
+  <script src="bird.js"> </script>
+  <script src="js1.js"> </script> 
+ 
+</body>
+
+</html>
